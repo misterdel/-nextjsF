@@ -7,7 +7,7 @@ export default function Home(props) {
   return (
     <div >
 
-       <h1 className={styles.title}>Hello Welcome to Production</h1>
+       <h1 className={styles.title}>Hello Welcome to dev</h1>
        <p>Handerson</p>
        <Contador />
 
