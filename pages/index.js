@@ -5,7 +5,7 @@ export default function Home(props) {
   const dynamicDateString = dynamicDate.toGMTString();
   return (
     <div >
-       <h1 className={styles.title}>Hello Word Next.js branch de produção </h1>
+       <h1 className={styles.title}>Hello Welcome to Production</h1>
        <div>  {dynamicDateString} (dinâmico) </div>
        <div>  {props.staticDateString} (estatico) </div>
 
