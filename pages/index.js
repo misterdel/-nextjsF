@@ -8,6 +8,7 @@ export default function Home(props) {
 
        <h1 className={styles.title}>Hello Welcome to Production</h1>
        <p>Handerson</p>
+       <Contador />
 
        <div>  {dynamicDateString} (dinâmico) </div>
        <div>  {props.staticDateString} (estatico) </div>
@@ -31,3 +32,19 @@ export function getStaticProps(){
     }
   }
 }
+
+
+function Contador(){
+  const [contador, setContador] = useState(1);
+  function adicionarContador(){
+      setContador(contador +1);
+  
+  }
+  
+      return(
+          <div>
+              <div>{contador}</div>
+              <button onClick={adicionarContador}>Adicionar</button>
+          </div>
+      )
+  }
