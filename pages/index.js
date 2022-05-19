@@ -6,6 +6,7 @@ export default function Home(props) {
   return (
     <div >
        <h1 className={styles.title}>Hello Welcome to Production</h1>
+       <p>Handerson</p>
        <div>  {dynamicDateString} (dinâmico) </div>
        <div>  {props.staticDateString} (estatico) </div>
 
