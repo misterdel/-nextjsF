@@ -1,20 +1,25 @@
 import styles from '../styles/Home.module.css'
 import {useState} from 'react'
+import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home(props) {
   const dynamicDate = new Date();
   const dynamicDateString = dynamicDate.toGMTString();
   return (
+    <>
+<Head>
+  <title>Página Principal</title>
+  <meta name="keyworkds" content='Roupas, calçados'></meta>
+  <meta name='description' content='encontre as melhores roupas dos mercado'></meta>
+</Head>
+
     <div >
 
        <h1 className={styles.title}>Hello Welcome to dev</h1>
-       <p>Handerson</p>
-       <Contador />
-
-       <div>  {dynamicDateString} (dinâmico) </div>
-       <div>  {props.staticDateString} (estatico) </div>
-
+    <Image src="/images/city.jpg" width="1000px" height="500px" alt='cidade a noite' />
     </div>
+    </>
   )
 }
 
